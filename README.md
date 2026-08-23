@@ -1,17 +1,17 @@
-# Henosis Canvas Developer Preview
+# henosis canvas Developer Preview
 
-This repository contains binary releases of Henosis Canvas. The Canvas source
+This repository contains binary releases of **henosis canvas**. The canvas source
 code is maintained separately and is not published here.
 
-Canvas is the local visual workspace for the open-source
-[Henosis Engine](https://github.com/henos-io/henosis). It runs on your machine,
-connects to a Henosis project, and exposes the Canvas and engine MCP endpoints
+**henosis canvas** is the local visual workspace for the open-source
+[henosis engine](https://github.com/henos-io/henosis). It runs on your machine,
+connects to a henosis project, and exposes the canvas and engine MCP endpoints
 on loopback interfaces.
 
 ## Download
 
-Most users do not need to download Canvas manually. Running `henosis canvas`
-causes Henosis Engine to download, verify and cache the latest compatible
+Most users do not need to download canvas manually. Running `henosis canvas`
+causes henosis engine to download, verify and cache the latest compatible
 release automatically.
 
 Download an archive explicitly only when working offline or using an
@@ -22,22 +22,22 @@ organisation-managed binary. Select your platform from
 - macOS arm64
 
 Do not use GitHub's automatically generated **Source code** archives. They
-contain only this release repository's documentation, not Henosis Canvas.
+contain only this release repository's documentation, not **henosis canvas**.
 
 Verify a manually downloaded archive against `SHA256SUMS.txt`, extract it, then
 pass its launcher to `henosis canvas --canvas-path` as shown below.
 
 ## Run
 
-Install Henosis Engine. From a Henosis project, run:
+Install henosis engine. From a henosis project, run:
 
 ```bash
 henosis canvas
 ```
 
-The Engine resolves the latest release for your platform, verifies it against
+The engine resolves the latest release for your platform, verifies it against
 `SHA256SUMS.txt`, caches it in your user application-data directory, starts the
-local engine and Canvas, and opens Canvas in your browser. Pin a release with:
+local engine and canvas, and opens canvas in your browser. Pin a release with:
 
 ```bash
 henosis canvas --canvas-version 0.1.0
