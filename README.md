@@ -23,15 +23,26 @@ Verify the archive against `SHA256SUMS.txt` before extracting it.
 
 ## Run
 
-Install Henosis Engine, extract the Canvas archive, and add its `bin` directory
-to your `PATH`. From a Henosis project, run:
+Install Henosis Engine. From a Henosis project, run:
 
 ```bash
 henosis canvas
 ```
 
-The command starts the local engine and Canvas, opens Canvas in your browser,
-and stops both processes when the launcher exits.
+The Engine resolves the latest release for your platform, verifies it against
+`SHA256SUMS.txt`, caches it in your user application-data directory, starts the
+local engine and Canvas, and opens Canvas in your browser. Pin a release with:
+
+```bash
+henosis canvas --canvas-version 0.1.0
+```
+
+For managed or offline environments, download and extract the platform archive,
+then provide its launcher explicitly:
+
+```bash
+henosis canvas --canvas-path /path/to/henosis-canvas
+```
 
 You can also invoke the extracted launcher directly:
 
