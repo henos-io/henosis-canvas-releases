@@ -10,7 +10,12 @@ on loopback interfaces.
 
 ## Download
 
-Download the archive for your platform from
+Most users do not need to download Canvas manually. Running `henosis canvas`
+causes Henosis Engine to download, verify and cache the latest compatible
+release automatically.
+
+Download an archive explicitly only when working offline or using an
+organisation-managed binary. Select your platform from
 [Releases](https://github.com/henos-io/henosis-canvas-releases/releases):
 
 - Windows x64
@@ -19,7 +24,8 @@ Download the archive for your platform from
 Do not use GitHub's automatically generated **Source code** archives. They
 contain only this release repository's documentation, not Henosis Canvas.
 
-Verify the archive against `SHA256SUMS.txt` before extracting it.
+Verify a manually downloaded archive against `SHA256SUMS.txt`, extract it, then
+pass its launcher to `henosis canvas --canvas-path` as shown below.
 
 ## Run
 
